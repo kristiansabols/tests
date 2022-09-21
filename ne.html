@@ -15,10 +15,54 @@
         let abols=5;
         kartupelis="zivis";
         </script>
-        <h1 id="istais"> ja </h1>
+        <h1 id="istais"> AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA </h1>
+        <p onclick="mainiKrasu()">Spied te!</p> 
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+        <p id="demo"></p>
+        <button onclick="alert('UGGAAAAAAAAAAAAAAAAAAAA BUGAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Click me.</button>
+<br>
+<br>
+<br>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
 
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Release Me";
+}
 
-        <p onclick="mainiKrasu()">Test</p> 
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Thank You";
+}
+</script>
+<br>
+<br>
+<br>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#44923d;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
 
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Paldies!"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Skaties te"
+}
+</script>
+<br>
+<br>
+<br>
+Enter your name: <input type="text" id="fname" onchange="upperCase()">
+<script>
+function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
     </body>
 </html>
